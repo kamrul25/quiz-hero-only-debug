@@ -59,7 +59,9 @@ const displayQuiz = (data) => {
   }
 
   data.forEach((quiz, i) => {
-    quizContainer.innerHTML = `<div class="m-3 py-3 px-4 shadow-sm rounded">
+    const createQuizDiv = document.createElement("div");
+    createQuizDiv.classList.add("m-3", "py-3", "px-4", "shadow-sm", "rounded")
+    createQuizDiv.innerHTML = `
   <div class="flex items-center">
     <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3">
       ${i + 1}
@@ -69,7 +71,8 @@ const displayQuiz = (data) => {
   <div class="grid grid-cols-2 gap-4 mt-5">
     ${displayQuizOptions(quiz.options, i)}
   </div>
-</div>`;
+`;
+quizContainer.appendChild(createQuizDiv);
   });
 };
 
