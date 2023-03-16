@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                common: ["Rubik", "sans-serif"],
+              },
+            },
+          },
+        };
+      </script>
+</head>
+<body class="m-12">
+    <section class="text-black mt-12 ">
+        <div class="mt-4">
+            <h2 class="text-3xl md:text-4xl font-medium">1. What is the difference among map(), filter(), find() and for Each?</h2>
+            <div class="px-4 py-2">
+                <p class="text-2xl font-normal"><span class="underline decoration-wavy">Answer:</span> They all are array method.Find method gives a single value. Map , filter and forEach method give a new array. Map and filter method return a new array and forEach return undefined. Map method executes the same code on every element in an array and returns a new array with the updated elements. ForEach is used to execute the same code on every element in an array but does not change the array. Filter  checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return <span class="text-red-300">truthy</span> for the criteria.  </p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h2 class="text-3xl md:text-4xl font-medium">2. What is the difference local storage, session storage and cookies?</h2>
+            <div class="px-4 py-2">
+                <p class="text-2xl font-normal"><span class="underline decoration-wavy">Answer:</span> Local storage is useful for storing data that the user will need to access later, such as offline data. Local storage stores data with no expiration date. Session storage is a great way to improve the performance of your web applications. Session storage stores data for one session (data is lost when the browser tab is closed). Cookies are a good choice for storing data that should not be persisted for a long time.  Cookies are small text files used to store user information on the user's computer.</p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h2 class="text-3xl md:text-4xl font-medium">3. What is the event loop? And how it works?</h2>
+            <div class="px-4 py-2">
+                <p class="text-2xl font-normal"><span class="underline decoration-wavy">Answer:</span> The event loop is the secret behind JavaScript's asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading. The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+                </p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h2 class="text-3xl md:text-4xl font-medium">4. How to work quizTimer function?</h2>
+            <div class="px-4 py-2">
+                <p class="text-2xl font-normal"><span class="underline decoration-wavy">Answer:</span> This function should stop when parameter was given. Either it runs a setInterval function. Inside setInterval function take a value and some calculation then apply with condition. </p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h2 class="text-3xl md:text-4xl font-medium">5. How to work chooseQuiz function?</h2>
+            <div class="px-4">
+                <p class="text-2xl font-normal"><span class="underline decoration-wavy">Answer:</span> This function take two parameter. Find a value from an array and apply this value  with condition. After that called another function and gives an array parameter.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
